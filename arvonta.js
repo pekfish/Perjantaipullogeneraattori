@@ -18,7 +18,7 @@ function addPlayer(){
   cell.appendChild(input);
 
   let remove = document.createElement('i');
-  remove.setAttribute('class', 'fa fa-trash');
+  remove.setAttribute('class', 'fa fa-times fa-2x');
 
   remove.onclick = function(e){
     //Remove the grand-parent element of the grand-grand-parent element :D
@@ -55,7 +55,7 @@ function aloitaPeli(){
 
     for(let i = 0; i<tableCells.length; i++){
       if(tableCells[i].value == pudonnut){
-        tableCells[i].style.backgroundColor = "red";
+        tableCells[i].style.backgroundColor = "#fd5e53";
       }
     }
     if(playerCount == 1){
