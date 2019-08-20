@@ -8,6 +8,7 @@ body {
 
 h1 {
 margin-top: 5%;
+font-size: 50px;
 }
 
 #players {
@@ -18,7 +19,6 @@ table-layout: fixed;
 margin-top: 6%;
 display: grid;
 justify-content: center;
-grid-template-rows: none;
 height: 90%;
 }
 
@@ -35,7 +35,8 @@ button{
   box-shadow: 0px 5px 10px #D0C9EA;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 button:hover {
@@ -44,7 +45,7 @@ button:hover {
 }
 
 #aloita{
-  margin-top: 50px;
+  margin-top: 60px;
   height: 100%;
 }
 
@@ -56,10 +57,9 @@ font-weight: bold;
 }
 
 #uusiPelaaja {
-position: relative;
-  margin-left: -65%;
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
 #uusiPelaaja:hover, .fa:hover, button:hover{

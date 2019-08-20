@@ -1,5 +1,5 @@
 var players = [];
-var playerCount = 1;
+var playerCount = 0;
 var tableCells = [];
 
 function addPlayer(){
