@@ -44,6 +44,7 @@ function aloitaPeli(){
   poistettava = document.getElementById('aloita');
   poistettava.parentNode.removeChild(poistettava);
   document.getElementById('result').innerHTML = "Good luck everyone!"
+ 
   //soitaMusiikki();
   //Countdown animaatio.. 5.. 4.. 3.. 2.. 1..
 
@@ -63,8 +64,12 @@ function aloitaPeli(){
     }
   }
   document.getElementById('grid-container').prepend(next);
+  soitaMusiikki();
+}
 
-  //soitaMusiikki();
+function soitaMusiikki(){
+	let audio = new Audio('lotto-tunnusmusiikki.mp3');
+	audio.play();
 }
 
 function arvoNumero(){
