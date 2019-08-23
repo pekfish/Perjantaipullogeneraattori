@@ -44,7 +44,7 @@ function aloitaPeli(){
   poistettava = document.getElementById('aloita');
   poistettava.parentNode.removeChild(poistettava);
   document.getElementById('result').innerHTML = "Good luck everyone!"
- 
+
   //soitaMusiikki();
   //Countdown animaatio.. 5.. 4.. 3.. 2.. 1..
 
@@ -59,8 +59,15 @@ function aloitaPeli(){
         tableCells[i].style.backgroundColor = "#fd5e53";
       }
     }
+    if(playerCount == 2){
+      console.log("two players left")
+      let oikeesti = document.createElement('img');
+      oikeesti.src = "oikeesti.jpeg";
+      document.body.appendChild(oikeesti);
+    }
     if(playerCount == 1){
       console.log("Voittaja: "+players[1]);
+      document.getElementById('result').innerHTML = 'Onneksi olkoon ' + players[1]
     }
   }
   document.getElementById('grid-container').prepend(next);
