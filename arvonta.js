@@ -59,12 +59,27 @@ function aloitaPeli(){
         tableCells[i].style.backgroundColor = "#fd5e53";
       }
     }
-    if(playerCount == 2){
-      console.log("two players left")
-      let oikeesti = document.createElement('img');
-      oikeesti.src = "oikeesti.jpeg";
-      document.body.prepend(oikeesti);
-    }
+	if(pudonnut.toLowerCase() == "mia-san"){
+		console.log("mia is not happy")
+		let grumpymia = document.createElement('img');
+		grumpymia.src = "mia-san.png";
+		document.body.prepend(grumpymia);
+		setTimeout(
+			() => {
+				grumpymia.parentNode.removeChild(grumpymia);
+			},5000);
+	}
+	else if(pudonnut.toLowerCase() == "lil' sofia"){
+		console.log("ai oikeesti")
+		let oikeesti = document.createElement('img');
+		oikeesti.src = "oikeesti.jpeg";
+		document.body.prepend(oikeesti);
+		setTimeout(
+			() => {
+				oikeesti.parentNode.removeChild(oikeesti);
+			},5000);
+	}
+	
     if(playerCount == 1){
       console.log("Voittaja: "+players[1]);
       document.getElementById('result').innerHTML = 'Onneksi olkoon ' + players[1]
