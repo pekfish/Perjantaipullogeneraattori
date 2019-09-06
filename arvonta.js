@@ -63,7 +63,7 @@ function aloitaPeli(){
       console.log("two players left")
       let oikeesti = document.createElement('img');
       oikeesti.src = "oikeesti.jpeg";
-      document.body.appendChild(oikeesti);
+      document.body.prepend(oikeesti);
     }
     if(playerCount == 1){
       console.log("Voittaja: "+players[1]);
